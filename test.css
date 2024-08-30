@@ -1,0 +1,68 @@
+/* AML PRIVACY SECTION */
+.aml_container {
+    /* background: var(--button-color); */
+    /* height: 100vh; */
+    width: 100%;
+}
+
+.aml_container .aml_main {
+    margin: 2rem;
+    background: var(--button-color);
+    border-radius: var(--border-radius-0-4);
+    padding: 2rem 2rem;
+}
+
+.aml_main .aml_content .p1 {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    /* letter-spacing: px; */
+    margin-bottom: 1.3rem;
+}
+
+.aml_main .aml_content .p2 {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.aml_main .aml_content .text_box {
+    margin-top: 2rem;
+}
+
+.aml_main .aml_content .text_box h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 1rem;
+}
+
+.aml_main .aml_content .text_box p {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.aml_main .aml_content .text_box h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.aml_main .aml_content .text_box ul {
+    margin-left: 2rem;
+    margin-top: 0.8rem;
+}
+
+.aml_main .aml_content .text_box ul li {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+}
+  
