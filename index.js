@@ -17,32 +17,28 @@ document.getElementById("year").textContent = currentYear;
 
 
 
-const faqs = document.querySelectorAll('.flex-container');
+// Select all faq_question elements
+const faqQuestions = document.querySelectorAll('.faq_question');
 
-faqs.forEach(faq => {
-  const content = faq.querySelector('.faq-content');
-  const plusIcon = faq.querySelector('.plus-icon'); // Select the plus icon
+faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+        // Toggle the 'show' class on the corresponding faq_answer
+        const answer = question.nextElementSibling;
+        answer.classList.toggle('show');
+        
+        // Toggle between add and minus icons
+        const addBtn = question.querySelector('.add_btn');
+        const minusBtn = question.querySelector('.minus_btn');
+        
+        addBtn.classList.toggle('active');
+        minusBtn.classList.toggle('active');
 
-  faq.addEventListener('click', function () {
-    // Close any other open FAQ
-    faqs.forEach(item => {
-      if (item !== faq) {
-        item.classList.remove('active');
-        item.querySelector('.faq-content').style.height = '0';
-        item.querySelector('.plus-icon').textContent = '+'; // Reset to plus sign
-      }
+        if(addBtn.classList.contains('active')){
+            addBtn.style.display = 'none';
+            minusBtn.style.display = 'inline-block';
+        } else {
+            addBtn.style.display = 'inline-block';
+            minusBtn.style.display = 'none';
+        }
     });
-
-    // Toggle the clicked FAQ
-    faq.classList.toggle('active');
-
-    if (faq.classList.contains('active')) {
-      const contentHeight = content.scrollHeight + 'px'; // Get full height of content
-      content.style.height = contentHeight; // Apply full height
-      plusIcon.textContent = '–'; // Change to minus sign
-    } else {
-      content.style.height = '0'; // Collapse back to 0 height
-      plusIcon.textContent = '+'; // Reset to plus sign
-    }
-  });
 });
