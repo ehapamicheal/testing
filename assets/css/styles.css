@@ -1245,7 +1245,7 @@
     }
 
     .mobile_links_box .mobile_login {
-        font-family: "Inter" sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 18px;
         font-weight: 400;
         line-height: 19.36px;
@@ -1264,7 +1264,7 @@
     }
 
     .mobile_navbar_container .mobile_navbar_button button {
-        font-family: "Inter" sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 16px;
         font-weight: 400;
         line-height: 19.36px;
@@ -1419,7 +1419,6 @@
     }
 
     .paid_add_text_box .paid h2 {
-        font-family: "Inter", sans-serif;
         font-size: 21px;
         line-height: 40px;
     }
@@ -1629,8 +1628,12 @@
         margin-top: 1rem;
     }
 
+    .footer_bottom .footer_bottom_right {
+        gap: 1.5rem;
+    }
+
     .footer_bottom .footer_bottom_right a {
-        font-size: 17px;
+        font-size: 16px;
     }
 
 
@@ -1887,7 +1890,7 @@
 
     /* FOOTER SECTION */
     .footer_bottom .footer_bottom_right {
-        gap: 1.5rem;
+        gap: 1.3rem;
     }
 
     .footer_bottom .footer_bottom_right a {
