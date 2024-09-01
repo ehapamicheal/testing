@@ -777,8 +777,6 @@
 }
 
 .testimonial_container .testimonial_main {
-    /* padding-left: 2.5rem;
-    padding-right: 2.5rem; */
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 3rem;
@@ -1087,7 +1085,8 @@
   
 .footer .footer_right_column {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px; 
 }
   
