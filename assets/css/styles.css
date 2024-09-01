@@ -12,7 +12,7 @@
     --primary-color: #074DA2;
     --white-color: #FFFFFF;
     --background-color: #e5e4ec;
-    --secondary-color: ;
+    --testimonial-color: #E8FBCB;
     --light-dark: #1C1C1C;
     --black-color: #000000;
     --dark-black: #121212;
@@ -41,7 +41,7 @@
     left: 0;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 50;
     background: var(--background-color);
 }
 
@@ -769,6 +769,108 @@
 }
 
 
+/* TESTIMONIAL SECTION  */
+.testimonial_container {
+    width: 100%;
+    background: var(--testimonial-color);
+    margin-top: 3rem;
+}
+
+.testimonial_container .testimonial_main {
+    /* padding-left: 2.5rem;
+    padding-right: 2.5rem; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.testimonial_main .testimonial_top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.testimonial_main .testimonial_top h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50.83px;
+    color: var(--black-color);
+    font-size: 2.625rem;
+    width: 50%;    
+}
+
+.testimonial_content .testimonial_wrapper {
+    overflow: hidden;
+    /* margin-right: 10px; */
+}
+
+/* Pagination bullets */
+.testimonial_wrapper .swiper-pagination-bullet {
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+  
+.swiper-pagination-bullet-active {
+    background-color: blue;
+}
+
+
+.testimonial_wrapper .testimonial_card_box {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.testimonial_card_box .testimonial_card {
+    padding: 2rem 1rem;
+    background: var(--white-color);
+    border-radius: var(--border-radius-0-6);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.testimonial_card_box .testimonial_card .p1 {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 42px;
+    color: var(--light-dark);    
+}
+
+.testimonial_card_box .testimonial_card .testimonial_img_box {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.testimonial_img_box .testimonial_text_box h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 42px;
+    color: var(--light-dark);    
+}
+
+.testimonial_img_box .testimonial_text_box p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 42px;
+    color: var(--light-dark);    
+}
+
+
+
+
 
 /* READY TO SIMPLIFY SECTION */
 .ready_container {
@@ -912,25 +1014,17 @@
 }
 
 .faq_box .faq_answer {
-    /* margin-top: 0.6rem;
-    transition: all 0.5s ease-in-out;
-    display: none; */
     margin-top: 0.2rem;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out, opacity 0.5s ease-out; 
-    /* height: 0;
-    overflow: hidden;
-    transition: height 0.5s ease; */
 }
 
 .faq_box .faq_answer.show {
-    /* display: block; */
     max-height: 500px;
     opacity: 1;
     transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
-    /* height: auto; */
 }
 
 .faq_box .faq_answer p {
@@ -1181,6 +1275,66 @@
     border-radius: var(--border-radius-0-4);
     padding: 2rem 2rem;
 }
+
+.privacy_main .privacy_logo {
+    margin-bottom: 2rem;
+}
+
+.privacy_main .privacy_logo a {
+    text-decoration: none;
+}
+
+.privacy_main .privacy_content h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 40px;
+    color: var(--black-color);
+}
+
+.privacy_content .privacy_text_box {
+    margin-top: 2rem;
+}
+
+.privacy_content .privacy_text_box h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.300rem;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--black-color);
+}
+
+.privacy_content .privacy_text_box p {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--black-color);
+    margin-bottom: 0.5rem;
+}
+
+.privacy_content .privacy_text_box h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--black-color);
+}
+
+.privacy_content .privacy_text_box ul {
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.privacy_content .privacy_text_box ul li {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--black-color);
+}
+
   
  
 
@@ -1195,7 +1349,33 @@
     .support_container .support_main {
         gap: 2rem;
     } 
+
+    /* TESTIMONIAL SECTION */
+    .testimonial_main .testimonial_top h1 {
+        width: 70%;    
+    }
+
+    .testimonial_card_box {
+        margin-bottom: 3.5rem;
+    }
+
+    .testimonial_card_box .testimonial_card {
+        max-width: 460px;
+    }
+
 }
+
+/* @media (max-width: 900px) {
+    .testimonial_card_box {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonial_card_box {
+        grid-auto-columns: 100%;
+    }
+} */
 
 @media (max-width: 768px) {
     /* NAVBAR SECTION */
@@ -1333,7 +1513,24 @@
     } 
     /* NAVBAR SECTION ENDS HERE */
     
-    
+
+    /* TESTIMONIAL SECTION */
+    .testimonial_main .testimonial_top {
+        text-align: center;
+    }
+
+    .testimonial_main .testimonial_top h1 {
+        font-size: 2.500rem;
+        width: 100%;    
+    }
+
+    .testimonial_card_box .testimonial_card {
+        max-width: 330px;
+    }
+
+    .testimonial_card_box {
+        width: 100%;
+    }
 
 
     /* GO SECTION */
@@ -1453,10 +1650,6 @@
         flex-direction: column;
         gap: 1rem;
     }
-
-    /* .phone-email {
-        margin-top: 0.3rem;.
-    } */
 
 
     /* PAIDLEY TEXT */
@@ -1614,6 +1807,31 @@
     }
 
 
+    /* TESTIMONIAL SECTION */
+    .testimonial_container .testimonial_main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .testimonial_main .testimonial_top h1 {
+        font-size: 2rem;  
+    }
+
+    .testimonial_content .testimonial_wrapper {
+        /* padding-right: 5px; */
+        margin: 0 10px 0 7px;
+    }
+
+    .testimonial_card_box {
+        margin-bottom: 2.5rem;
+        width: 100%;
+    }
+
+    .testimonial_card_box .testimonial_card {
+        max-width: 400px;
+    }
+
+
     /* READY TO SIMPLIFY SECTION */
     .ready_container {
         height: 320px;
@@ -1739,6 +1957,21 @@
     }
     
 
+
+    /* PRIVACY SECTION */
+    .privacy_container .privacy_main {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .privacy_main .privacy_content h2 {
+        font-size: 1.3rem;
+        line-height: 37px;
+    }
+    
+    
+
     
     
 }
@@ -1835,6 +2068,27 @@
     .support_right .support_content .p1 {
         font-size: 16px; 
         line-height: 30px;
+    }
+
+    /* TESTIMONIAL SECTION */
+    .testimonial_main .testimonial_top h1 {
+        line-height: 38px;
+        font-size: 1.5rem;  
+    }
+
+    .testimonial_card_box .testimonial_card .p1 {
+        font-size: 16px;
+        line-height: 35px;   
+    }
+
+    .testimonial_img_box .testimonial_text_box h4 {
+        font-size: 17px;
+        line-height: 42px;  
+    }
+    
+    .testimonial_img_box .testimonial_text_box p {
+        font-size: 17px;
+        line-height: 42px;   
     }
 
 
@@ -2014,6 +2268,35 @@
     .aml_main .aml_content .text_box ul li {
         font-size: 16px;
     }
+
+    /* PRIVACY SECTION */
+    .privacy_main .privacy_content h2 {
+        font-size: 1.1rem;
+        line-height: 30px;
+    }
+    
+    .privacy_content .privacy_text_box h3 {
+        font-size: 1.200rem;
+        /* line-height: 32px; */
+    }
+
+    .privacy_content .privacy_text_box p {
+        font-size: 0.950rem;
+        line-height: 32px;
+    }
+
+    .privacy_content .privacy_text_box h4 {
+        font-size: 1rem;
+        line-height: 32px;
+    }
+
+    .privacy_content .privacy_text_box ul li {
+        font-size: 0.950rem;
+        line-height: 30px;
+    }
     
 }
+
+
+
 
