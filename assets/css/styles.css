@@ -88,8 +88,8 @@
     color: var(--primary-color);
 }
 
-.navbar_main .navbar_links a .a-icons {
-    color: var(--primary-color);
+.navbar_main .navbar_links a img {
+    width: 0.9rem;
 }
 
 .navbar_container .navbar_main .navbar_button {
@@ -179,6 +179,10 @@
     font-weight: 400;
     line-height: 36px;
     letter-spacing: 0.5px;   
+}
+
+.go_container .go_main .go_left_side .p1 span {
+    font-weight: 600;
 }
 
 .go_container .go_main .go_left_side .form_container {
@@ -802,7 +806,6 @@
 
 .testimonial_content .testimonial_wrapper {
     overflow: hidden;
-    /* margin-right: 10px; */
 }
 
 /* Pagination bullets */
@@ -872,12 +875,13 @@
 
 /* READY TO SIMPLIFY SECTION */
 .ready_container {
-    background-image: url('../images//simplify.png');
+    background-image: url('../images/simplify.png');
     background-position: center;
     background-repeat: no-repeat;
     background-repeat: cover;
     height: 350px;
     margin-top: 3rem;
+    width: 100%;
 }
 
 .ready_container .ready_main {
@@ -1036,11 +1040,6 @@
 
 
 
-
-
-
-
-
 /* FOOTER SECTION */
 .footer {
     font-family: "Inter", sans-serif;
@@ -1085,7 +1084,6 @@
   
 .footer .footer_right_column {
     display: grid;
-    /* grid-template-columns: repeat(4, 1fr); */
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; 
 }
@@ -1364,17 +1362,6 @@
 
 }
 
-/* @media (max-width: 900px) {
-    .testimonial_card_box {
-        grid-auto-columns: calc((100% / 2) - 9px);
-    }
-}
-
-@media (max-width: 600px) {
-    .testimonial_card_box {
-        grid-auto-columns: 100%;
-    }
-} */
 
 @media (max-width: 768px) {
     /* NAVBAR SECTION */
@@ -1396,6 +1383,10 @@
         color: var(--light-dark);
         font-weight: 500;
         transition: -1s ease-out;
+    }
+
+    .hamburger_menu img {
+        width: 2rem;
     }
 
     .hamburger_menu .close_icon {
@@ -1466,8 +1457,8 @@
         color: var(--primary-color);
     }
 
-    .mobile_navbar_links .mobile_links_box a .a-icons {
-        color: var(--primary-color);
+    .mobile_navbar_links .mobile_links_box a img {
+        width: 0.7rem;
     }
 
     .mobile_links_box .mobile_login {
@@ -1513,6 +1504,115 @@
     /* NAVBAR SECTION ENDS HERE */
     
 
+
+    /* GO SECTION */
+    .go_container .go_main {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .go_container .go_main .go_left_side {
+        width: 100%;
+    }
+
+    .go_container .go_main .go_left_side .form_container {
+        width: 100%;
+    }
+
+    .go_main .go_right_side {
+        width: 100%;
+    }
+
+    .go_right_side .go_right_box {
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+
+
+    /* FOREIGN BANK SECTION */
+    .foreign_container .foreign_main {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .foreign_main .foreign_left {
+        width: 100%;
+    }
+
+    .foreign_main .foreign_right {
+        width: 100%;
+    }
+    
+
+    /* VIRTUAL SECTION */
+    .virtual_container .virtual_main {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .virtual_container .virtual_top_head p {
+        width: 100%;
+    }
+
+    .virtual_main .virtual_left {
+        width: 100%;
+    }
+
+    .virtual_main .virtual_right {
+        width: 100%;
+    }
+
+
+    /* RECEIVE MONEY SECTION */
+    .receieve_container .receieve_main {
+        grid-template-columns: 1fr;
+    }
+
+    .receieve_main .receieve_left {
+        width: 100%;
+    }
+
+    .receieve_main .receieve_right {
+        width: 100%;
+    }
+
+    /* PAY ANYWHERE SECTION */
+    .pay_container .pay_main {
+        grid-template-columns: 1fr;        
+    }
+
+    .pay_main .pay_left {
+        width: 100%;
+    }
+
+    .pay_main .pay_right {
+        order: -1;
+        width: 100%;
+    }
+
+
+    /* SUPPORT SECTION */
+    .support_container .support_main {
+        grid-template-columns: 1fr;
+    }
+
+    .support_main .support_left {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .support_main .support_left img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .support_main .support_right {
+        order: -1;
+        width: 100%;
+    }
+
+
     /* TESTIMONIAL SECTION */
     .testimonial_main .testimonial_top {
         text-align: center;
@@ -1529,81 +1629,6 @@
 
     .testimonial_card_box {
         width: 100%;
-    }
-
-
-    /* GO SECTION */
-    .go_container .go_main {
-        grid-template-columns: 1fr;
-    }
-
-    .go_container .go_main .go_left_side .form_container {
-        width: 100%;
-    }
-
-    .go_right_side .go_right_box {
-        margin-top: 3rem;
-    }
-
-
-
-    /* FOREIGN BANK SECTION */
-    .foreign_container .foreign_main {
-        grid-template-columns: 1fr;
-    }
-
-    .foreign_main .foreign_right {
-        width: 100%;
-    }
-    
-
-    /* VIRTUAL SECTION */
-    .virtual_container .virtual_main {
-        grid-template-columns: 1fr;
-    }
-
-    .virtual_container .virtual_top_head p {
-        width: 100%;
-    }
-
-
-    /* RECEIVE MONEY SECTION */
-    .receieve_container .receieve_main {
-        grid-template-columns: 1fr;
-    }
-
-    /* PAY ANYWHERE SECTION */
-    .pay_container .pay_main {
-        grid-template-columns: 1fr;        
-    }
-
-    .pay_main .pay_left {
-        width: 100%;
-    }
-
-    .pay_main .pay_right {
-        order: -1;
-    }
-
-
-    /* SUPPORT SECTION */
-    .support_container .support_main {
-        /* padding: 3rem 2rem 2rem; */
-        grid-template-columns: 1fr;
-    }
-
-    .support_main .support_left {
-        margin-top: 2rem;
-        width: 100%;
-    }
-
-    .support_main .support_left img {
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .support_main .support_right {
-        order: -1;
     }
 
 
